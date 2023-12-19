@@ -48,7 +48,7 @@ def game():
                     new_arr[x,y,1]=arr[x,y,1]+1
                     func.Gen([W,H,GEN_SIZE,CEIL_DATA], arr, new_arr, x, y)
         arr=new_arr.copy()
-        # byte_reading.write_data("data.sm", arr, [W,H,GEN_SIZE,CEIL_DATA])
+        byte_reading.write_data("data.sm", arr, [W,H,GEN_SIZE,CEIL_DATA])
 
         pygame.display.flip()
         clock.tick(60)
